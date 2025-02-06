@@ -41,7 +41,7 @@ const isArmstrong = (num) => {
 };
 
 const digitSum = (num) => {
-  return String(num)
+  return String(Math.abs(num))
     .split("")
     .reduce((acc, digit) => acc + Number(digit), 0);
 };
